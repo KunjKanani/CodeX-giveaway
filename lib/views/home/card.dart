@@ -28,6 +28,7 @@ class CustomCardDesign extends StatelessWidget {
         },
         shrinkWrap: true,
         scrollDirection: Axis.vertical,
+        physics: NeverScrollableScrollPhysics(),
         itemCount: _cardData.cardDetails.length,
       ),
     );
