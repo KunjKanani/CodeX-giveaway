@@ -26,9 +26,12 @@ class ViewDetailsPage extends StatelessWidget {
             children: [
               Hero(
                 tag: 'card'+index.toString(),
-                child: TopBar(
-                  index: index,
-                  cardDetail: cardDetail,
+                child: Material(
+                  type: MaterialType.transparency,
+                  child: TopBar(
+                    index: index,
+                    cardDetail: cardDetail,
+                  ),
                 ),
               ),
               SingleChildScrollView(

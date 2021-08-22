@@ -17,9 +17,12 @@ class CustomCardDesign extends StatelessWidget {
         itemBuilder: (context, index) {
           return Hero(
             tag: "card"+index.toString(),
-            child: getCard(
-              index: index,
-              cardDetail: _cardData.cardDetails[index],
+            child: Material(
+              type: MaterialType.transparency,
+              child: getCard(
+                index: index,
+                cardDetail: _cardData.cardDetails[index],
+              ),
             ),
           );
         },
